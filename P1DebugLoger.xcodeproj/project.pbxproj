@@ -32,12 +32,12 @@
 		C48CA3941F415561005A49A7 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = C48CA37D1F415561005A49A7 /* zip.c */; };
 		C48CA3961F415561005A49A7 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3811F415561005A49A7 /* SSZipArchive.m */; };
 		C48CA3991F415590005A49A7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C48CA3981F415590005A49A7 /* libz.tbd */; };
-		C48CA39D1F4155F7005A49A7 /* P1DebugLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA39C1F4155F7005A49A7 /* P1DebugLogger.m */; };
-		C48CA3A31F41572B005A49A7 /* NSFileManager+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3A21F41572B005A49A7 /* NSFileManager+Helpers.m */; };
 		C48CA3A61F417F79005A49A7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48CA3A51F417F79005A49A7 /* MessageUI.framework */; };
-		C48CA3A91F419ED7005A49A7 /* UIViewController+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3A81F419ED7005A49A7 /* UIViewController+Helpers.m */; };
-		C48CA3AC1F419F10005A49A7 /* UIWindow+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3AB1F419F10005A49A7 /* UIWindow+Helper.m */; };
-		C48CA3AF1F419FD6005A49A7 /* SendEmailHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3AE1F419FD6005A49A7 /* SendEmailHandler.m */; };
+		C48CA3EE1F42AE4F005A49A7 /* NSFileManager+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3E91F42AE4F005A49A7 /* NSFileManager+Helpers.m */; };
+		C48CA3EF1F42AE4F005A49A7 /* UIViewController+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3EB1F42AE4F005A49A7 /* UIViewController+Helpers.m */; };
+		C48CA3F01F42AE4F005A49A7 /* UIWindow+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3ED1F42AE4F005A49A7 /* UIWindow+Helper.m */; };
+		C48CA3F61F42B061005A49A7 /* P1DebugLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3F31F42B061005A49A7 /* P1DebugLogger.m */; };
+		C48CA3F71F42B061005A49A7 /* SendEmailHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3F51F42B061005A49A7 /* SendEmailHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,17 +91,17 @@
 		C48CA3821F415561005A49A7 /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
 		C48CA3831F415561005A49A7 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
 		C48CA3981F415590005A49A7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		C48CA39B1F4155F7005A49A7 /* P1DebugLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P1DebugLogger.h; sourceTree = "<group>"; };
-		C48CA39C1F4155F7005A49A7 /* P1DebugLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P1DebugLogger.m; sourceTree = "<group>"; };
-		C48CA3A11F41572B005A49A7 /* NSFileManager+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Helpers.h"; sourceTree = "<group>"; };
-		C48CA3A21F41572B005A49A7 /* NSFileManager+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Helpers.m"; sourceTree = "<group>"; };
 		C48CA3A51F417F79005A49A7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		C48CA3A71F419ED7005A49A7 /* UIViewController+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Helpers.h"; sourceTree = "<group>"; };
-		C48CA3A81F419ED7005A49A7 /* UIViewController+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Helpers.m"; sourceTree = "<group>"; };
-		C48CA3AA1F419F10005A49A7 /* UIWindow+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Helper.h"; sourceTree = "<group>"; };
-		C48CA3AB1F419F10005A49A7 /* UIWindow+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Helper.m"; sourceTree = "<group>"; };
-		C48CA3AD1F419FD6005A49A7 /* SendEmailHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SendEmailHandler.h; path = third_party/SendEmailHandler.h; sourceTree = "<group>"; };
-		C48CA3AE1F419FD6005A49A7 /* SendEmailHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SendEmailHandler.m; path = third_party/SendEmailHandler.m; sourceTree = "<group>"; };
+		C48CA3E81F42AE4F005A49A7 /* NSFileManager+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Helpers.h"; sourceTree = "<group>"; };
+		C48CA3E91F42AE4F005A49A7 /* NSFileManager+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Helpers.m"; sourceTree = "<group>"; };
+		C48CA3EA1F42AE4F005A49A7 /* UIViewController+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Helpers.h"; sourceTree = "<group>"; };
+		C48CA3EB1F42AE4F005A49A7 /* UIViewController+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Helpers.m"; sourceTree = "<group>"; };
+		C48CA3EC1F42AE4F005A49A7 /* UIWindow+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Helper.h"; sourceTree = "<group>"; };
+		C48CA3ED1F42AE4F005A49A7 /* UIWindow+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Helper.m"; sourceTree = "<group>"; };
+		C48CA3F21F42B061005A49A7 /* P1DebugLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P1DebugLogger.h; sourceTree = "<group>"; };
+		C48CA3F31F42B061005A49A7 /* P1DebugLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P1DebugLogger.m; sourceTree = "<group>"; };
+		C48CA3F41F42B061005A49A7 /* SendEmailHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendEmailHandler.h; sourceTree = "<group>"; };
+		C48CA3F51F42B061005A49A7 /* SendEmailHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendEmailHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,26 +137,18 @@
 		C41D5A041F415482004F392C /* P1DebugLoger */ = {
 			isa = PBXGroup;
 			children = (
+				C48CA3F11F42B061005A49A7 /* diagnoseLog */,
+				C48CA3E71F42AE4F005A49A7 /* Utilities */,
 				C41D5A1C1F4154A4004F392C /* third_party */,
 				C41D5A081F415483004F392C /* AppDelegate.h */,
 				C41D5A091F415483004F392C /* AppDelegate.m */,
 				C41D5A0B1F415483004F392C /* ViewController.h */,
 				C41D5A0C1F415483004F392C /* ViewController.m */,
-				C48CA3AD1F419FD6005A49A7 /* SendEmailHandler.h */,
-				C48CA3AE1F419FD6005A49A7 /* SendEmailHandler.m */,
 				C41D5A0E1F415483004F392C /* Main.storyboard */,
 				C41D5A111F415483004F392C /* Assets.xcassets */,
 				C41D5A131F415483004F392C /* LaunchScreen.storyboard */,
 				C41D5A161F415483004F392C /* Info.plist */,
 				C41D5A051F415482004F392C /* Supporting Files */,
-				C48CA39B1F4155F7005A49A7 /* P1DebugLogger.h */,
-				C48CA39C1F4155F7005A49A7 /* P1DebugLogger.m */,
-				C48CA3A11F41572B005A49A7 /* NSFileManager+Helpers.h */,
-				C48CA3A21F41572B005A49A7 /* NSFileManager+Helpers.m */,
-				C48CA3A71F419ED7005A49A7 /* UIViewController+Helpers.h */,
-				C48CA3A81F419ED7005A49A7 /* UIViewController+Helpers.m */,
-				C48CA3AA1F419F10005A49A7 /* UIWindow+Helper.h */,
-				C48CA3AB1F419F10005A49A7 /* UIWindow+Helper.m */,
 			);
 			path = P1DebugLoger;
 			sourceTree = "<group>";
@@ -248,6 +240,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C48CA3E71F42AE4F005A49A7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C48CA3E81F42AE4F005A49A7 /* NSFileManager+Helpers.h */,
+				C48CA3E91F42AE4F005A49A7 /* NSFileManager+Helpers.m */,
+				C48CA3EA1F42AE4F005A49A7 /* UIViewController+Helpers.h */,
+				C48CA3EB1F42AE4F005A49A7 /* UIViewController+Helpers.m */,
+				C48CA3EC1F42AE4F005A49A7 /* UIWindow+Helper.h */,
+				C48CA3ED1F42AE4F005A49A7 /* UIWindow+Helper.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C48CA3F11F42B061005A49A7 /* diagnoseLog */ = {
+			isa = PBXGroup;
+			children = (
+				C48CA3F21F42B061005A49A7 /* P1DebugLogger.h */,
+				C48CA3F31F42B061005A49A7 /* P1DebugLogger.m */,
+				C48CA3F41F42B061005A49A7 /* SendEmailHandler.h */,
+				C48CA3F51F42B061005A49A7 /* SendEmailHandler.m */,
+			);
+			path = diagnoseLog;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,8 +337,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C48CA3A31F41572B005A49A7 /* NSFileManager+Helpers.m in Sources */,
-				C48CA39D1F4155F7005A49A7 /* P1DebugLogger.m in Sources */,
 				C48CA3931F415561005A49A7 /* unzip.c in Sources */,
 				C48CA3901F415561005A49A7 /* ioapi_buf.c in Sources */,
 				C48CA38D1F415561005A49A7 /* sha1.c in Sources */,
@@ -332,17 +346,19 @@
 				C48CA3891F415561005A49A7 /* fileenc.c in Sources */,
 				C48CA3941F415561005A49A7 /* zip.c in Sources */,
 				C48CA3851F415561005A49A7 /* aes_ni.c in Sources */,
-				C48CA3A91F419ED7005A49A7 /* UIViewController+Helpers.m in Sources */,
 				C41D5A0D1F415483004F392C /* ViewController.m in Sources */,
-				C48CA3AF1F419FD6005A49A7 /* SendEmailHandler.m in Sources */,
-				C48CA3AC1F419F10005A49A7 /* UIWindow+Helper.m in Sources */,
+				C48CA3F01F42AE4F005A49A7 /* UIWindow+Helper.m in Sources */,
 				C48CA38F1F415561005A49A7 /* ioapi.c in Sources */,
 				C48CA3921F415561005A49A7 /* minishared.c in Sources */,
+				C48CA3F71F42B061005A49A7 /* SendEmailHandler.m in Sources */,
 				C48CA38E1F415561005A49A7 /* crypt.c in Sources */,
 				C48CA3881F415561005A49A7 /* aestab.c in Sources */,
+				C48CA3EF1F42AE4F005A49A7 /* UIViewController+Helpers.m in Sources */,
 				C41D5A0A1F415483004F392C /* AppDelegate.m in Sources */,
 				C48CA3871F415561005A49A7 /* aeskey.c in Sources */,
+				C48CA3F61F42B061005A49A7 /* P1DebugLogger.m in Sources */,
 				C48CA3911F415561005A49A7 /* ioapi_mem.c in Sources */,
+				C48CA3EE1F42AE4F005A49A7 /* NSFileManager+Helpers.m in Sources */,
 				C48CA38A1F415561005A49A7 /* hmac.c in Sources */,
 				C48CA3861F415561005A49A7 /* aescrypt.c in Sources */,
 				C41D5A071F415482004F392C /* main.m in Sources */,

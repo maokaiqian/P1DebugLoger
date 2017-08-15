@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "P1DebugLogger.h"
+#import "P1DiagnoseLogger.h"
 #import "SendEmailHandler.h"
 
 #define kTestText   @"All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved."
@@ -35,11 +35,11 @@
 }
 //TODO 需不需要将SendEmailHandler中的代码和入到P1DebugLogger
 - (void)btnClick1:(UIButton *)button {
-    [[P1DebugLogger sharedLogger] doLog:kTestText];
+    [[P1DiagnoseLogger sharedLogger] doLog:kTestText];
 }
 
 - (void)btnClick2:(UIButton *)button {
-    [[P1DebugLogger sharedLogger] doArchive:^(NSArray *filePaths) {
+    [[P1DiagnoseLogger sharedLogger] doArchive:^(NSArray *filePaths) {
         [[SendEmailHandler sharedHandler] sendEmailWithPath:[filePaths firstObject]];
     }];
 }

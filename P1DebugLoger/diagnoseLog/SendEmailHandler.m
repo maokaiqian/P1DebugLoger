@@ -7,7 +7,7 @@
 //
 
 #import "SendEmailHandler.h"
-#import "P1DebugLogger.h"
+#import "P1DiagnoseLogger.h"
 #import <MessageUI/MessageUI.h>
 #import "SSZipArchive.h"
 #import "UIViewController+Helpers.h"

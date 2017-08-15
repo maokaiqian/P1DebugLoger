@@ -19,7 +19,7 @@ NSString* message = [NSString stringWithFormat:format, ##__VA_ARGS__]; \
 //#define XDebugLog(format, ...) ({})
 //#endif
 
-@interface P1DebugLogger : NSObject
+@interface P1DiagnoseLogger : NSObject
 
 @property (nonatomic, readonly) NSURL *logPath;
 

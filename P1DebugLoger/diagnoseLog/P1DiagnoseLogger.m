@@ -6,13 +6,13 @@
 //  Copyright © 2017年 maokaiqian. All rights reserved.
 //
 
-#import "P1DebugLogger.h"
+#import "P1DiagnoseLogger.h"
 #import "NSFileManager+Helpers.h"
 
 static NSString * LogDirectory = @"DebugLogger";
 static NSString * LogFileBaseName = @"log";
 
-@interface P1DebugLogger ()
+@interface P1DiagnoseLogger ()
 
 @property (nonatomic, assign) NSInteger maxGenerationLevel;
 @property (nonatomic, assign) NSInteger maxFileSize;
@@ -21,13 +21,13 @@ static NSString * LogFileBaseName = @"log";
 
 @end
 
-@implementation P1DebugLogger
+@implementation P1DiagnoseLogger
 
 + (instancetype)sharedLogger {
-    static P1DebugLogger * logger = nil;
+    static P1DiagnoseLogger * logger = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        logger = [[P1DebugLogger alloc] init];
+        logger = [[P1DiagnoseLogger alloc] init];
     });
     
     return logger;

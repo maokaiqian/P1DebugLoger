@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "P1DiagnoseLogger.h"
-#import "SendEmailHandler.h"
 
 #define kTestText   @"All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved.Copyright © 2017年 maokaiqian. All rights reserved."
 
@@ -33,15 +32,13 @@
     btn2.backgroundColor = [UIColor blueColor];
     [btn2 addTarget:self action:@selector(btnClick2:) forControlEvents:(UIControlEventTouchUpInside)];
 }
-//TODO 需不需要将SendEmailHandler中的代码和入到P1DebugLogger
+
 - (void)btnClick1:(UIButton *)button {
     [[P1DiagnoseLogger sharedLogger] doLog:kTestText];
 }
 
 - (void)btnClick2:(UIButton *)button {
-    [[P1DiagnoseLogger sharedLogger] doArchive:^(NSArray *filePaths) {
-        [[SendEmailHandler sharedHandler] sendEmailWithPath:[filePaths firstObject]];
-    }];
+    [[P1DiagnoseLogger sharedLogger] doArchive:nil];
 }
 
 @end

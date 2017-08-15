@@ -37,7 +37,6 @@
 		C48CA3EF1F42AE4F005A49A7 /* UIViewController+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3EB1F42AE4F005A49A7 /* UIViewController+Helpers.m */; };
 		C48CA3F01F42AE4F005A49A7 /* UIWindow+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3ED1F42AE4F005A49A7 /* UIWindow+Helper.m */; };
 		C48CA3F61F42B061005A49A7 /* P1DiagnoseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3F31F42B061005A49A7 /* P1DiagnoseLogger.m */; };
-		C48CA3F71F42B061005A49A7 /* SendEmailHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C48CA3F51F42B061005A49A7 /* SendEmailHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,8 +99,6 @@
 		C48CA3ED1F42AE4F005A49A7 /* UIWindow+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Helper.m"; sourceTree = "<group>"; };
 		C48CA3F21F42B061005A49A7 /* P1DiagnoseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P1DiagnoseLogger.h; sourceTree = "<group>"; };
 		C48CA3F31F42B061005A49A7 /* P1DiagnoseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P1DiagnoseLogger.m; sourceTree = "<group>"; };
-		C48CA3F41F42B061005A49A7 /* SendEmailHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendEmailHandler.h; sourceTree = "<group>"; };
-		C48CA3F51F42B061005A49A7 /* SendEmailHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendEmailHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,8 +255,6 @@
 			children = (
 				C48CA3F21F42B061005A49A7 /* P1DiagnoseLogger.h */,
 				C48CA3F31F42B061005A49A7 /* P1DiagnoseLogger.m */,
-				C48CA3F41F42B061005A49A7 /* SendEmailHandler.h */,
-				C48CA3F51F42B061005A49A7 /* SendEmailHandler.m */,
 			);
 			path = diagnoseLog;
 			sourceTree = "<group>";
@@ -350,7 +345,6 @@
 				C48CA3F01F42AE4F005A49A7 /* UIWindow+Helper.m in Sources */,
 				C48CA38F1F415561005A49A7 /* ioapi.c in Sources */,
 				C48CA3921F415561005A49A7 /* minishared.c in Sources */,
-				C48CA3F71F42B061005A49A7 /* SendEmailHandler.m in Sources */,
 				C48CA38E1F415561005A49A7 /* crypt.c in Sources */,
 				C48CA3881F415561005A49A7 /* aestab.c in Sources */,
 				C48CA3EF1F42AE4F005A49A7 /* UIViewController+Helpers.m in Sources */,

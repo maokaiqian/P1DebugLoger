@@ -134,13 +134,13 @@ static NSString * LogFileBaseName = @"log";
             currentGeneration--;
         }
 
-        if (completionBlock) {
-            dispatch_async(dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (completionBlock) {
                 completionBlock(@[archiveDirectory]);
-            });
-        }
-        //发送邮件
-        [self sendEmailWithPath:archiveDirectory];
+            }
+            //发送邮件
+            [self sendEmailWithPath:archiveDirectory];
+        });
     });
 }
 

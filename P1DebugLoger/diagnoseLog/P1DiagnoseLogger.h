@@ -25,8 +25,18 @@ NSString* message = [NSString stringWithFormat:format, ##__VA_ARGS__]; \
 
 + (instancetype)sharedLogger;
 
+/**
+ 写入需要记录的信息
+
+ @param message 写入的信息
+ */
 - (void)doLog:(NSString *)message;
 
+/**
+ 将记录的信息打包并邮件发送
+
+ @param completionBlock 打包完成后的回调
+ */
 - (void)doArchive:(void (^) (NSArray * filePaths))completionBlock;
 
 @end

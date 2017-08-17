@@ -24,9 +24,11 @@ static NSString * const SubjectMail = @"邮件主题";
 static NSString * const MessageBodyMail = @"邮件内容";
 
 @interface P1DiagnoseLogger ()<MFMailComposeViewControllerDelegate>
-
+//指定缓存的文件数目
 @property (nonatomic, assign) NSInteger maxGenerationLevel;
+//指定每个文件最大尺寸
 @property (nonatomic, assign) NSInteger maxFileSize;
+//缓存文件的baseURL
 @property (nonatomic, readwrite) NSURL *logPath;
 @property (nonatomic, strong) dispatch_queue_t logQueue;
 
@@ -84,7 +86,7 @@ static NSString * const MessageBodyMail = @"邮件内容";
                 
                 fileSize = [attributes objectForKey:NSFileSize];
                 if ([fileSize unsignedLongLongValue] > _maxFileSize) {
-                    //页面下移
+                    //缓存文件下移置换
                     NSString *currentGenerationFile = nil;
                     NSString *nextGenerationFile = nil;
                     NSInteger currentGeneration = _maxGenerationLevel;
